@@ -46,3 +46,17 @@ default_rng(42).random((2,3,2))
 #        [[0.7611397 , 0.78606431],
 #         [0.12811363, 0.45038594],
 #         [0.37079802, 0.92676499]]])
+
+print(np.full((2,2),7))
+
+array = np.arange(0,11,2) 
+print("original array\n",array)
+
+reshaped = array.reshape((2,3));
+print("\nReshaped array\n",reshaped)
+
+flattened = reshaped.flatten();
+print("\nflattened array\n",flattened)
+
+transpose = reshaped.T 
+print("\nTranspose\n",transpose)
