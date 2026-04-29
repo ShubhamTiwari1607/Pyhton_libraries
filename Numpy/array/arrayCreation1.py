@@ -22,3 +22,5 @@ print('signed c:', c_signed32, c_signed32.dtype)
 
 # When you perform operations with different dtype, NumPy will assign a new type that satisfies all of the array elements involved in the computation, here uint32 and int32 can both be represented in as int64.
 # The default NumPy behavior is to create arrays in either 32 or 64-bit signed integers (platform dependent and matches C long size) or double precision floating point numbers. If you expect your integer arrays to be a specific type, then you need to specify the dtype while you create the array.
+
+print(np.array([3]*10,dtype=float))
